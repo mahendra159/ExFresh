@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    >
+
+    <!-- Header aligned to top -->
+<!--
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ffb7d1ff"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/h_reference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reference"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="0dip"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/h_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/h_reference"
+            android:text="Date"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/h_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/h_date"
+            android:text="Total Price"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/h_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginRight="0dip"
+            android:layout_toRightOf="@id/h_price"
+            android:text="Status"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_above="@+id/footerlayout"
+            android:layout_width="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content">
+
+
+        <ListView
+            android:id="@+id/order_hist_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_selector" />
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/footerlayout"
+        android:layout_marginTop="3dip"
+        android:layout_marginBottom="-8dip"
+        android:layout_height="60dip"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/bHome"
+            android:text="Home"
+            android:layout_weight="1"
+            android:background="@drawable/red_button"
+            style="@style/button_text">
+        </Button>
+        <Button
+            android:id="@+id/bMyCart"
+            android:text="My Cart"
+            android:layout_weight="1"
+            android:background="@drawable/red_button"
+            style="@style/button_text"
+            >
+        </Button>
+        <Button
+            android:id="@+id/bOffers"
+            android:text="Offers"
+            android:layout_weight="1"
+            android:background="@drawable/red_button"
+            style="@style/button_text"
+            >
+        </Button>
+    </LinearLayout>
+</RelativeLayout>

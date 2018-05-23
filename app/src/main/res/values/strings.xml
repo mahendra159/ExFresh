@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">ExFresh</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Enter product name</string>
+    <string name="login_email_hint">Enter your email</string>
+    <string name="login_passwd_hint">Enter your password</string>
+    <string name="change_password_hint">Different password to change</string>
+    <string name="change_password_cnfrm_hint">Retype password to confirm</string>
+
+    <string name="farm_address"><u>Farm Address</u></string>
+    <string name="farm_description"><u>Description</u></string>
+
+
+    <string name="register_passwd_hint">Choose your password</string>
+    <string name="register_passwd_confirm_hint">Retype password</string>
+    <string name="first_name">Enter your first name</string>
+    <string name="last_name">Enter your last name</string>
+
+    <string name="order_ref_hint">Enter order reference no (optional)</string>
+    <string name="cs_msg_hint">Enter your message/query/suggestion</string>
+
+    <string name="menu_share">Share</string>
+
+    <string name="action_ety_cart">Empty Cart</string>
+    <string name="ord_dtl_product_disp"><u>Product</u></string>
+    <string name="ord_dtl_quantity_disp"><u>Quantity</u></string>
+    <string name="ord_dtl_price_disp"><u>Price</u></string>
+    <string name="selectdate">Select Date Of Birth</string>
+    <string name="spinner_header">Choose Quantity</string>
+
+
+    <string name="cityspinner_title">Select City</string>
+    <string name="statespinner_title">Select State</string>
+    <string name="countryspinner_title">Select Country</string>
+
+
+    <string name="tos">
+Terms and conditions of use\n\n
+
+</string>
+
+    <string name="usage">To order, select a quantity and then alter it using + or - .Eg. to order 1.5 kg, select 500 gm and increase quantity to 3, i.e. 500 gm * 3 = 1.5 kg\n</string>
+    <string name="order_place"><b>Your order is placed successfully.</b>\n\nThe final billing amount may somewhat differ as per the billed quantities. Eg. ordered quantity is 1 kg but billed quantity may be 900 gm or so.\n</string>
+
+    <string name="share_app">\n\nLet me recommend you this android application - <b>ExFresh</b>\n\n</string>
+
+
+
+
+    Let me recommend you this android application - ExFresh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Push Notifications</string>
+    <string name="error_config">Please set the %1$s constant and recompile the app.</string>
+    <string name="already_registered">Device is already registered on server.</string>
+    <string name="gcm_registered">From GCM: device successfully registered!</string>
+    <string name="gcm_unregistered">From GCM: device successfully unregistered!</string>
+    <string name="gcm_message">From GCM: you got message!</string>
+    <string name="gcm_error">From GCM: error (%1$s).</string>
+    <string name="gcm_recoverable_error">From GCM: recoverable error (%1$s).</string>
+    <string name="gcm_deleted">From GCM: server deleted %1$d pending messages!</string>
+    <string name="server_registering">Trying (attempt %1$d/%2$d) to register device on ExFresh Server.</string>
+    <string name="server_registered">From ExFresh Server: successfully added device!</string>
+    <string name="server_unregistered">From ExFresh Server: successfully removed device!</string>
+    <string name="server_register_error">Could not register device on ExFresh Server after %1$d attempts.</string>
+    <string name="server_unregister_error">Could not unregister device on ExFresh Server (%1$s).</string>
+    <string name="options_register">Register</string>
+    <string name="options_unregister">Unregister</string>
+    <string name="options_clear">Clear</string>
+    <string name="options_exit">Exit</string>
+
+    <string name="server_loc_registering">Trying (attempt %1$d/%2$d) to register device on ExFresh Location Server.</string>
+    <string name="server_loc_registered">From ExFresh Server: location successfully added!</string>
+
+
+
+
+
+    <string name="abt_us"><u>About us</u></string>
+    <string name="abt_us_detail">The foundation of <i><b>Exfresh</b></i> had been laid down as a platform that can give customers with 100 % certified products which are safe for their families. We have been regularly getting news about sewage water grown vegetables and fruits containing poisonous and harmful elements (heavy metals) and other contents. And it is highly painful that same is consumed by little children. \n\nThough many farmers do grow these staples in good environment but unfortunately we can’t distinguish once it reaches the market. \n\nHere lies our job, we have directly approached the farmers and took samples of water, soil and their produce and get them clinically tested at <i><b>Agriculture Research Station</b></i> Durgapura, Jaipur (a govt entity engaged in research and development in the field of agriculture/horticulture). After successful results we have associated them with us to directly deliver as per demand, that’s why we deliver the next day as we don’t keep any stock. Thus in this way fresh and quality certified staples will reach to consumer directly from field. \nSimilarly to this , we are planning to bring dairy products also on the same working model.
+
+\n\n\nThe Team behind Exfresh has many helping hands with two ex-Wipro Technologies engineers <i><b>Mahendra Singh</b></i> and <i><b>Devendra Choudhary</b></i> at the core.
+
+\n\n\nThe workflow of Exfresh is very simple . Firstly we offer only those products that are available according to norms. Then respective farmers are conveyed the required quantities , that are to be delivered next morning without any middleman being involved. As soon as the stock reach us, our delivery team does the rest of the job. With this initiative of ExFresh more and more farmers are looking to improvise their farming according to standard norms.\n\n</string>
+
+    <string name="privacy_policy"><b>Privacy Policy</b> \n\nWe as ExFresh built the ExFresh app as a free app. This SERVICE is provided by ExFresh at no cost and is intended
+    for use as is.\n\nThis page is used to inform website visitors regarding our policies with the collection, use, and
+    disclosure of Personal Information if anyone decided to use our Service.\n\nIf you choose to use our Service, then you agree to the collection and use of information in
+    relation with this policy. The Personal Information that we collect are used for providing and
+    improving the Service. We will not use or share your information with anyone except as described
+    in this Privacy Policy.\n\nThe terms used in this Privacy Policy have the same meanings as in our Terms and Conditions,
+        which is accessible at ExFresh, unless otherwise defined in this Privacy Policy.\n\n<b>Information Collection and Use</b>\nFor a better experience while using our Service, we may require you to provide us with certain
+    personally identifiable information, including but not limited to email, users name, address, location.
+        The information that we request is retained by us and used as described in this privacy policy.\n\nThe app does use third party services that may collect information used to identify you.\n\n<b>Log Data</b>\nWe want to inform you that whenever you use our Service, in case of an error in the app we collect
+    data and information (through third party products) on your phone called Log Data. This Log Data
+    may include information such as your devices’s Internet Protocol (“IP”) address, device name,
+    operating system version, configuration of the app when utilising our Service, the time and date
+        of your use of the Service, and other statistics.\n\n<b>Cookies</b>\nCookies are files with small amount of data that is commonly used an anonymous unique identifier.
+    These are sent to your browser from the website that you visit and are stored on your devices’s
+            internal memory. Our app is not using cookies in any mode.\n\n<b>Service Providers</b>\nWe may employ third-party companies and individuals due to the following reasons:\nTo facilitate our Service\n
+    To provide the Service on our behalf\nTo perform Service-related services or \nTo assist us in analyzing how our Service is used.\n\nWe want to inform users of this Service that these third parties have access to your Personal
+    Information. The reason is to perform the tasks assigned to them on our behalf. However, they
+    are obligated not to disclose or use the information for any other purpose.\n\n<b>Security</b>\nWe value your trust in providing us your Personal Information, thus we are striving to use
+    commercially acceptable means of protecting it. But remember that no method of transmission over
+    the internet, or method of electronic storage is 100% secure and reliable, and we cannot
+    guarantee its absolute security.\n\n<b>Links to Other Sites</b>\nThis Service may contain links to other sites like youtube. If you click on a third-party link, you will be
+    directed to that site. Note that these external sites are not operated by us. Therefore, I
+    strongly advise you to review the Privacy Policy of these websites. I have no control over, and
+    assume no responsibility for the content, privacy policies, or practices of any third-party
+    sites or services.\n\n<b>Children’s Privacy</b>\nThis Services do not address anyone under the age of 13. We do not knowingly collect personal
+    identifiable information from children under 13. In the case we discover that a child under 13
+    has provided us with personal information, we immediately delete this from our servers. If you
+    are a parent or guardian and you are aware that your child has provided us with personal
+    information, please contact us so that we will be able to do necessary actions.\n\n<b>Changes to This Privacy Policy</b>\nWe may update our Privacy Policy from time to time. Thus, you are advised to review this page
+    periodically for any changes. We will notify you of any changes by posting the new Privacy Policy
+    on this page. These changes are effective immediately, after they are posted on this page.\n\n<b>Contact Us</b>\nIf you have any questions or suggestions about our Privacy Policy, do not hesitate to contact
+    us.\n</string>
+
+
+    <string name="privacy_policy_v2">
+
+    </string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- for google login activity-->
+
+    <!--<string name="app_name">GLogin</string>-->
+    <!--<string name="title_text">Google Sign-In\nQuickstart</string>-->
+    <!-- Sign-in status messages -->
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="signed_in">Signed in</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="signed_out">Signed out</string>
+    <string name="signed_in_err">"Error: please check logs."</string>
+    <string name="error_null_person">
+        Error: Plus.PeopleApi.getCurrentPerson returned null. Ensure that the Google+ API is
+        enabled for your project, you have a properly configured google-services.json file
+        and that your device has an internet connection.
+    </string>
+    <string name="loading">Loading…</string>
+    <string name="auth_code_fmt">Auth Code: %s</string>
+    <string name="id_token_fmt">ID Token: %s</string>
+
+    <!-- Google Play Services error for Toast -->
+    <string name="play_services_error_fmt">Google Play Services Error: %i</string>
+
+    <!-- Button labels -->
+    <string name="sign_out">Sign Out</string>
+    <string name="disconnect">Disconnect</string>
+
+    <!-- Content Description for images -->
+    <string name="desc_google_icon">Google Logo</string>
+
+    <!-- Rationale for asking for Contacts -->
+    <string name="contacts_permission_rationale">Contacts access is needed in order to retrieve your email address.</string>
+
+    <!-- Activity Names and Descriptions -->
+    <string name="name_sign_in_activity">SignInActivity</string>
+    <string name="desc_sign_in_activity">Signing in, signing out, and revoking access.</string>
+    <string name="desc_sign_in_activity_scopes">Signing in, signing out, and revoking access with Google Drive permissions.</string>
+    <string name="name_id_token_activity">IdTokenActivity</string>
+    <string name="desc_id_token_activity">Retrieving an ID Token for the user.</string>
+    <string name="desc_auth_code_activity">Demonstrate retrieving an auth code for authorizing your server.</string>
+    <string name="name_auth_code_activity">ServerAuthCodeActivity</string>
+
+    <!-- TODO(user): replace with your real server client ID -->
+    <!-- Server Client ID.  This should be a valid Web OAuth 2.0 Client ID obtained
+         from https://console.developers.google.com/ -->
+    <string name="server_client_id">YOUR_SERVER_CLIENT_ID</string>
+    <string name="name">Name :</string>
+
+
+
+</resources>

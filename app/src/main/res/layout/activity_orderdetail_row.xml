@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="0dip" >
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/Table_layout1"
+        android:background="#ffffff"
+        android:stretchColumns="*" >
+
+        <TableRow>
+            <TextView
+                android:id="@+id/Product_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:textStyle="bold"
+                android:layout_span="1"
+                android:textSize="15dip"/>
+
+
+            <TextView
+                android:id="@+id/Product_Quantity"
+                android:layout_width="wrap_content"
+                android:typeface="sans"
+                android:gravity="center_horizontal"
+                android:layout_span="2"
+                android:textSize="15dip"/>
+
+
+            <TextView
+                android:id="@+id/Product_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:gravity="right"
+                android:layout_span="2"
+                android:textSize="15dip" />
+
+
+        </TableRow>
+
+
+
+        <TableRow android:background="#ffffedbf">
+            <TextView
+                android:id="@+id/tot_prc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dip"
+                android:text="Total Price "/>
+
+            <TextView
+                android:id="@+id/Total_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:typeface="sans"
+                android:gravity="right"
+                android:layout_weight="1.0"
+                android:textSize="15dip" />
+
+        </TableRow>
+        <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TableRow android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="50dip"
+                android:text="Select to return"
+                android:id="@+id/ret_chkbx" />
+
+                <EditText android:id="@+id/ret_question"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter return remarks"
+                    android:gravity="top|left"
+                    android:scrollbars="vertical"
+                    android:scrollHorizontally="false"
+                    android:singleLine="true"/>
+
+
+        </TableRow>
+        </HorizontalScrollView>
+
+    </TableLayout>
+
+
+</RelativeLayout>
+
+
+<!--
+<TableRow android:background="#ffffedbf">
+            <TextView
+                android:id="@+id/carrier_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:textSize="15dip"
+                android:text="Shipping"/>
+
+            <TextView
+                android:id="@+id/shipping_prc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:textSize="15dip"/>
+
+            <TextView
+                android:id="@+id/Shipping_Charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:gravity="right"
+                android:layout_weight="1.0"
+                android:textSize="15dip" />
+
+        </TableRow>
+-->

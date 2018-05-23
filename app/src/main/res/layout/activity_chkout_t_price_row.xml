@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+
+
+    <TextView
+        android:id="@+id/cart_empty_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_centerHorizontal="true"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="25dip"
+        android:textStyle="bold"/>
+
+
+
+    <!-- Total Price-->
+    <TextView
+        android:id="@+id/tot_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/total_price_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/tot_price"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+
+    <!-- Total Items-->
+    <TextView
+        android:id="@+id/tot_items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:layout_below="@id/tot_price"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/total_items_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/tot_items"
+        android:layout_below="@id/total_price_txtview"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- Order Id invisible-->
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dip"
+        android:visibility="gone"
+        android:layout_marginTop="1dip"/>
+    <!-- Order Id invisible-->
+
+    <TextView
+        android:id="@+id/sub_total"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dip"
+        android:visibility="gone"
+        android:layout_marginTop="1dip"/>
+
+    <TextView
+        android:id="@+id/shipping"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dip"
+        android:visibility="gone"
+        android:layout_marginTop="1dip"/>
+
+    <TextView
+        android:id="@+id/carrier_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dip"
+        android:visibility="gone"
+        android:layout_marginTop="1dip"/>
+
+    <TextView
+        android:id="@+id/carrier_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dip"
+        android:visibility="gone"
+        android:layout_marginTop="1dip"/>
+
+
+    <TextView
+        android:id="@+id/delivery_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dip"
+        android:visibility="gone"
+        android:layout_marginTop="1dip"/>
+
+
+
+
+    <TextView
+        android:id="@+id/Reference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dip"
+        android:text="Reference No. "/>
+-->
+    <TextView
+        android:id="@+id/order_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Reference"
+        android:layout_marginLeft="4dip"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:textSize="15dip"/>
+
+
+
+        <TextView
+            android:id="@+id/Ord_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Reference"
+            android:textSize="15dip"
+            android:text="Order Date"/>
+        <TextView
+            android:id="@+id/order_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Ord_Date"
+            android:layout_below="@id/order_ref"
+            android:typeface="sans"
+            android:layout_marginRight="3dip"
+            android:layout_alignLeft="@id/order_ref"
+            android:textSize="15dip"/>
+
+
+        <TextView
+            android:id="@+id/Tot_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Ord_Date"
+            android:textSize="15dip"
+            android:text="Total Price "/>
+
+        <TextView
+            android:id="@+id/order_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Tot_Price"
+            android:layout_below="@id/order_date"
+            android:typeface="sans"
+            android:layout_marginRight="3dip"
+            android:layout_alignLeft="@id/order_ref"
+            android:textSize="15dip"/>
+
+        <TextView
+            android:id="@+id/Ord_Stat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Tot_Price"
+            android:textSize="15dip"
+            android:text="Status "/>
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Ord_Stat"
+            android:layout_below="@id/order_total_price"
+            android:typeface="sans"
+            android:layout_marginRight="3dip"
+            android:layout_alignLeft="@id/order_ref"
+            android:textSize="15dip"/>
+
+
+    </RelativeLayout>
+
+
+        <!--
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/order_date"
+            android:src="@drawable/vertical_separator64" />
+
+
+            <TextView
+            android:id="@+id/verticalline"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:drawable/dark_header"
+            android:gravity="center_horizontal"
+            android:layout_toRightOf="@id/order_ref"
+            android:layout_marginRight="3dip"
+            android:layout_marginLeft="3dip"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" />
+    -->

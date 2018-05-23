@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_above="@+id/footerlayout"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content">
+
+
+        <ListView
+            android:id="@+id/add_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/list_selector" />
+    </LinearLayout>
+
+
+    <LinearLayout android:id="@+id/footerlayout"
+        android:layout_marginTop="3dip"
+        android:layout_marginBottom="-8dip"
+        android:layout_height="60dip"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/bHome"
+            android:text="Home"
+            android:layout_weight="1"
+            android:background="@drawable/red_button"
+            style="@style/button_text">
+        </Button>
+        <Button
+            android:id="@+id/bAddNew"
+            android:text="Add New"
+            android:layout_weight="1"
+            android:background="@drawable/red_button"
+            style="@style/button_text"
+            >
+        </Button>
+        <Button
+            android:id="@+id/bchkout"
+            android:text="Checkout"
+            android:layout_weight="1"
+            android:background="@drawable/red_button"
+            style="@style/button_text"
+            >
+        </Button>
+    </LinearLayout>
+</RelativeLayout>

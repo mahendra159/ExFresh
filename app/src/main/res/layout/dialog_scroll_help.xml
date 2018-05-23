@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/scroll_image_hint"
+        android:src="@drawable/scroll_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/dismiss_btn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/scroll_image_hint"
+        android:text="Close"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="15dip"
+        android:background="@drawable/red_button3"
+        style="@style/button_text2"/>
+
+</RelativeLayout>

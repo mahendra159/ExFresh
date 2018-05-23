@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exfresh.exfreshapp" >
+
+    <!-- Permission - Internet Connect -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- Permission to read phone number-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <permission
+        android:name="com.exfresh.exfreshapp.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="com.exfresh.exfreshapp.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <!-- for google login-->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="com.exfresh.exfreshapp.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.exfresh.exfreshapp.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:allowBackup="true"
+        android:name="com.exfresh.exfreshapp.MyApplication"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Splash Screen -->
+        <activity
+            android:name="com.exfresh.exfreshapp.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Registration Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.RegActivity"
+            android:label="Registration"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+
+        <!-- Login Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.LoginActivity"
+            android:label="Login"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <!-- New Google Login Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.NewLoginActivity"
+            android:label="Login"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <!-- Category Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.Category"
+            android:label="Categories"
+            android:parentActivityName="com.exfresh.exfreshapp.SplashScreen">
+            <!-- android:parentActivityName="com.exfresh.exfresh.SplashScreen" -->
+
+            <!-- To support below API Level 14 -->
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchResultsActivity" />
+
+        </activity>
+
+        <!-- Products Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.Products"
+            android:windowSoftInputMode="adjustPan"
+            android:label=""
+            android:parentActivityName="com.exfresh.exfreshapp.Category">
+
+            <meta-data
+                android:name="android.app.default_searchable"
+                android:value=".SearchResultsActivity" />
+
+        </activity>
+
+        <!-- Search results activity -->
+        <activity android:name="com.exfresh.exfreshapp.SearchResultsActivity"
+            android:parentActivityName="com.exfresh.exfreshapp.Category" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+
+
+        <!-- My Cart Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.My_CartActivity"
+            android:label="My Cart" >
+        </activity>
+
+        <!-- My Account Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.My_AccountActivity"
+            android:label="My Account" >
+        </activity>
+
+        <!-- Order History Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.OrderHistory"
+            android:label="Order History" >
+        </activity>
+
+        <!-- Order Detail Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.OrderDetail"
+            android:label="Order Details" >
+        </activity>
+
+        <!-- CheckOut Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.CheckoutActivity"
+            android:label="Order Summary" >
+        </activity>
+
+        <!-- CheckOutAddress Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.CheckOutAddressActivity"
+            android:label="Address Confirm" >
+        </activity>
+
+        <!-- Final Checkout Activity -->
+
+        <!-- Address Registration Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.AddressRegistrationActivity"
+            android:label="Address Registration"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <!-- Update Profile Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.UpdateProfileActivity"
+            android:label="Update Profile"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <!-- My Returns Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.My_Returns"
+            android:label="Returns" >
+        </activity>
+
+        <!-- Return Detail Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.Return_Detail"
+            android:label="Return Detail" >
+        </activity>
+
+        <!-- My Address Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.MyAddressActivity"
+            android:label="My Addresses" >
+        </activity>
+
+        <!-- Update Address Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.UpdateAddress"
+            android:label="Update Address"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <!-- Forgot Password Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.ForgotPasswordActivity"
+            android:label="Reset Password"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+
+        <!-- Offers Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.OffersActivity"
+            android:label="Offers" >
+        </activity>
+
+        <!-- Certs Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.CertActivity"
+            android:label="Certification" >
+        </activity>
+
+        <!-- Cert Map Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.cert_map"
+            android:label="Farm Location"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <!-- About Us Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.AboutUs"
+            android:label="About us"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <!-- Media Reports Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.MediaReports"
+            android:label="Media Reports"
+            android:theme="@android:style/Theme.Holo">
+        </activity>
+
+        <!-- Media Reports Activity -->
+        <activity
+            android:name="com.exfresh.exfreshapp.PrivacyPolicy"
+            android:label="Privacy Policy"
+            android:theme="@android:style/Theme.Holo.Dialog">
+        </activity>
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.exfresh.exfreshapp" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.exfresh.exfreshapp.GCMIntentService" />
+
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBwvfdUmhrSQUtn04IGw_vC0XkqZ61GS8Q"/>
+
+</application>
+
+</manifest>
+
+    <!--android:value="AIzaSyDKzPRcPPNbE4GJmXRmC8-sqpwZIgLOj58" -->

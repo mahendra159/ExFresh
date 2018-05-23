@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="0dip" >
+
+    <!-- Order Id invisible-->
+    <TextView
+        android:id="@+id/order_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#343434"
+        android:textSize="15dip"
+        android:visibility="gone"
+        android:layout_marginTop="1dip"/>
+    <!-- Order Id invisible-->
+
+
+    <TextView
+        android:id="@+id/id_order_ret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#372c24"
+        android:textSize="15dip"
+        android:text="Return Id "/>
+    -->
+    <TextView
+        android:id="@+id/id_order_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:layout_toRightOf="@id/id_order_ret"
+        android:layout_marginLeft="4dip"
+        android:typeface="sans"
+        android:textStyle="bold"
+        android:textSize="15dip"/>
+
+
+
+    <TextView
+        android:id="@+id/ord_ref"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#372c24"
+        android:layout_below="@id/id_order_ret"
+        android:textSize="15dip"
+        android:text="Order Ref."/>
+    <TextView
+        android:id="@+id/order_reference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ord_ref"
+        android:layout_below="@id/id_order_return"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:layout_marginRight="3dip"
+        android:layout_alignLeft="@id/id_order_return"
+        android:textSize="15dip"/>
+
+
+
+
+    <TextView
+        android:id="@+id/Ord_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#372c24"
+        android:layout_below="@id/ord_ref"
+        android:textSize="15dip"
+        android:text="Status "/>
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_reference"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:layout_toRightOf="@id/Ord_state"
+        android:layout_marginRight="3dip"
+        android:layout_alignLeft="@id/id_order_return"
+        android:textSize="15dip"/>
+
+    <TextView
+        android:id="@+id/Ord_dt_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#372c24"
+        android:layout_below="@id/Ord_state"
+        android:textSize="15dip"
+        android:text="Date "/>
+    <TextView
+        android:id="@+id/date_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Ord_dt_add"
+        android:layout_below="@id/state"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:layout_marginRight="3dip"
+        android:layout_alignLeft="@id/id_order_return"
+        android:textSize="15dip"/>
+
+
+</RelativeLayout>
+
+
+    <!--
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_date"
+        android:src="@drawable/vertical_separator64" />
+
+
+        <TextView
+        android:id="@+id/verticalline"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/dark_header"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@id/order_ref"
+        android:layout_marginRight="3dip"
+        android:layout_marginLeft="3dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" />
+-->

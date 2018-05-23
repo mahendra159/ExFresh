@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff">
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:layout_alignParentTop="true"
+    android:layout_above="@+id/totallayout">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ListView
+        android:id="@+id/product_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_selector" >
+    </ListView>
+
+
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/list_divider"
+            android:dividerHeight="1dp"
+            android:background="#4A9C67">
+        </ListView>
+    </LinearLayout>
+</ScrollView>
+
+    <RelativeLayout android:id="@+id/totallayout"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/footerlayout">
+
+
+        <!-- Total Price-->
+        <TextView
+            android:id="@+id/Total_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:typeface="serif"
+            android:textSize="15dip"
+            android:textStyle="bold"/>
+
+        <!--
+                <TextView
+                    android:id="@+id/beta_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/gama"
+                    android:textColor="#040404"
+                    android:typeface="sans"
+                    android:textSize="15dip"
+                    android:textStyle="bold"/> -->
+
+        <!-- Total Items-->
+        <TextView
+            android:id="@+id/Total_Items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Total_Price"
+            android:typeface="serif"
+            android:textSize="15dip"
+            android:textStyle="bold"/>
+
+        <!--
+                <TextView
+                    android:id="@+id/beta_total_items"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/gama2"
+                    android:layout_below="@id/beta_total"
+                    android:textColor="#040404"
+                    android:typeface="sans"
+                    android:textSize="15dip"
+                    android:textStyle="bold"/> -->
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout android:id="@+id/footerlayout"
+            android:layout_marginTop="3dip"
+            android:layout_marginBottom="-8dip"
+            android:layout_height="60dip"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/bHome"
+                android:text="Home"
+                android:layout_weight="1"
+                android:background="@drawable/red_button"
+                style="@style/button_text">
+            </Button>
+            <Button
+                android:id="@+id/bMyCart"
+                android:text="My Cart"
+                android:layout_weight="1"
+                android:background="@drawable/red_button"
+                style="@style/button_text"
+                >
+            </Button>
+            <Button
+                android:id="@+id/bchkout"
+                android:text="Checkout"
+                android:layout_weight="1"
+                android:background="@drawable/red_button"
+                style="@style/button_text"
+                >
+            </Button>
+        </LinearLayout>
+</RelativeLayout>

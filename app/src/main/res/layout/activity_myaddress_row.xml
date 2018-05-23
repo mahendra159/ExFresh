@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- Alias -->
+    <TextView
+        android:id="@+id/alias"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:textSize="20dip"
+        android:textStyle="bold"
+        android:layout_marginTop="1dip"/>
+
+
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alias"
+        android:textSize="15dip"
+        android:text="Name - "/>
+    -->
+    <TextView
+        android:id="@+id/f_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/full_name"
+        android:layout_marginLeft="3dip"
+        android:layout_below="@id/alias"
+        android:typeface="sans"
+        android:textSize="15dip"/>
+
+
+    <TextView
+        android:id="@+id/l_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/f_name"
+        android:layout_below="@id/alias"
+        android:typeface="sans"
+        android:layout_marginLeft="3dip"
+        android:textSize="15dip"/>
+
+
+    <TextView
+        android:id="@+id/full_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/full_name"
+        android:textSize="15dip"
+        android:text="Address - "/>
+
+    <TextView
+        android:id="@+id/add1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/full_address"
+        android:layout_below="@id/f_name"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:layout_toLeftOf="@+id/tap2edit"
+        android:layout_toStartOf="@+id/tap2edit" />
+
+    <TextView
+        android:id="@+id/add2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/full_address"
+        android:layout_below="@id/add1"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:layout_toLeftOf="@+id/tap2edit"
+        android:layout_toStartOf="@+id/tap2edit" />
+
+
+
+
+    <TextView
+        android:id="@+id/cty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add2"
+        android:layout_alignLeft="@id/full_address"
+        android:textSize="15dip"
+        android:text="City - "/>
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add2"
+        android:layout_toRightOf="@id/cty"
+        android:typeface="sans"
+        android:layout_marginRight="10dip"
+        android:textSize="15dip"/>
+
+
+    <TextView
+        android:id="@+id/pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add2"
+        android:layout_toRightOf="@id/city"
+        android:textSize="15dip"
+        android:text="PIN - "
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/postcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add2"
+        android:layout_toRightOf="@id/pin"
+        android:textSize="15dip"
+        android:visibility="gone"/>
+
+
+
+
+    <TextView
+        android:id="@+id/mob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cty"
+        android:layout_alignLeft="@id/full_address"
+        android:textSize="15dip"
+        android:text="Mobile - "/>
+
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/mob"
+        android:layout_alignBaseline="@+id/mob"
+        android:typeface="sans"
+        android:layout_marginRight="3dip"
+        android:textSize="15dip"/>
+
+    <TextView
+        android:id="@+id/phne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mob"
+        android:layout_alignLeft="@id/full_address"
+        android:textSize="15dip"
+        android:text="Phone - "/>
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/phne"
+        android:layout_toRightOf="@id/phne"
+        android:typeface="sans"
+        android:layout_marginRight="3dip"
+        android:textSize="15dip"/>
+
+    <!-- Id_Address -->
+    <TextView
+        android:id="@+id/id_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#343434"
+        android:textSize="20dip"
+        android:textStyle="bold"
+        android:layout_marginTop="1dip"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tap2edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to edit"
+        android:layout_marginRight="3dip"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+
+
+</RelativeLayout>
+
+
+    <!--
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/order_date"
+        android:src="@drawable/vertical_separator64" />
+
+
+        <TextView
+        android:id="@+id/verticalline"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/dark_header"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@id/order_ref"
+        android:layout_marginRight="3dip"
+        android:layout_marginLeft="3dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip" />
+-->

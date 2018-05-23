@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/top_Left_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#330033"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/farm_add_disp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="@string/farm_address"
+                android:textColor="#ffcbffc6"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/farm_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/farm_add_disp"
+                android:padding="10dp"
+                android:scrollbars="vertical"
+                android:textColor="#ffcbffc6"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_Right_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#330033"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/mapbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:contentDescription="Map Button"
+                android:src="@drawable/locate" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/midLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_weight="1"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/Mid_Left_Layout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="#ff5d6942"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/product_f_image"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="farm_pic1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Mid_Right_Layout"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:background="#ff5d6942"
+            android:orientation="horizontal">
+
+
+
+            <ImageView
+                android:id="@+id/product_s_image"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:contentDescription="farm_pic2" />
+
+
+
+         </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_weight="0.8"
+        android:baselineAligned="false"
+        android:background="#ff5d6942"
+        android:layout_marginBottom="10dp">
+
+        <TextView android:id="@+id/cert_desc_disp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/farm_description"
+            android:padding="10dp"
+            android:textSize="20dp"
+            android:textColor="#ffcbffc6" />
+
+        <TextView android:id="@+id/cert_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cert_desc_disp"
+            android:padding="10dp"
+            android:textSize="14dp"
+            android:textColor="#ffcbffc6"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

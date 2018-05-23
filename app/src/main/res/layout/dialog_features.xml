@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Table_Layout"
+        >
+
+
+        <TableRow>
+
+
+
+            <TextView
+                android:id="@+id/bullet0"
+                android:layout_column="1"
+                android:layout_weight="0"
+                android:textSize="20dip"
+                android:visibility="gone"
+                android:layout_marginLeft="3dip"
+                android:drawableLeft="@drawable/dot"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/TextView00"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="1"
+                android:textColor="#ff3a070b" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30px">
+
+            <TextView
+                android:id="@+id/bullet1"
+                android:layout_column="1"
+                android:layout_weight="0"
+                android:textSize="20dip"
+                android:visibility="gone"
+                android:layout_marginLeft="3dip"
+                android:drawableLeft="@drawable/dot"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="1"
+                android:textColor="#ff3a070b" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30px">
+
+            <TextView
+                android:id="@+id/bullet2"
+                android:layout_column="1"
+                android:layout_weight="0"
+                android:textSize="20dip"
+                android:visibility="gone"
+                android:layout_marginLeft="3dip"
+                android:drawableLeft="@drawable/dot"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="1"
+                android:textColor="#ff3a070b" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30px">
+
+            <TextView
+                android:id="@+id/bullet3"
+                android:layout_column="1"
+                android:layout_weight="0"
+                android:textSize="20dip"
+                android:visibility="gone"
+                android:layout_marginLeft="3dip"
+                android:drawableLeft="@drawable/dot"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="1"
+                android:textColor="#ff3a070b" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="30px">
+
+            <TextView
+                android:id="@+id/bullet4"
+                android:layout_column="1"
+                android:layout_weight="0"
+                android:textSize="20dip"
+                android:visibility="gone"
+                android:layout_marginLeft="3dip"
+                android:drawableLeft="@drawable/dot"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                ></TextView>
+
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_column="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dip"
+                android:layout_marginLeft="2dip"
+                android:layout_weight="1"
+                android:textColor="#ff3a070b" />
+            
+            <!--#ffeb0608 -->
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/dismiss_btn"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/Table_Layout"
+        android:text="Close"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="15dip"
+        android:background="@drawable/red_button3"
+        style="@style/button_text2"/>
+
+</RelativeLayout>

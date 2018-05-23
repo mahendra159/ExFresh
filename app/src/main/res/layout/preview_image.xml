@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!--
+    <ImageView
+        android:paddingTop="8dp"
+        android:id="@+id/preview_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="farm_pic"/>    -->
+
+    <com.exfresh.exfreshapp.TouchImageView
+        android:id="@+id/img"
+        android:paddingTop="8dp"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="farm_pic"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_button"
+        style="@style/button_text"
+        android:id="@+id/btnIvClose"
+        android:text="Close"
+        android:layout_below="@+id/img"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+
+        <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/AddressLayout"
+            android:layout_alignParentTop="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+
+
+
+                <ListView
+                    android:id="@+id/add_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#b5b5b5"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@drawable/list_selector" />
+
+
+
+        </ScrollView>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:id="@+id/line"
+        android:layout_height="2dp"
+        android:background="#ff525252"
+        android:layout_below="@+id/AddressLayout"/>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:id="@+id/MainLayout"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="4dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/SubTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"
+            android:layout_marginLeft="10dp"
+            style="@style/Light_Grey_Color_Serif"
+            android:text="Sub Total"
+            android:layout_marginBottom="5dp"/>
+
+
+        <TextView
+            android:id="@+id/SubTotalValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/SubTotal"
+            style="@style/Light_Grey_Color_Serif"/>
+
+        <TextView
+            android:id="@+id/Delivery_Charges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"
+            style="@style/Light_Grey_Color_Serif"
+            android:text="Delivery Charges"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/SubTotal"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/Delivery_Charges_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            style="@style/Light_Grey_Color_Serif"
+            android:layout_alignBaseline="@+id/Delivery_Charges"/>
+
+        <View style="@style/PartialDivider"
+            android:id="@+id/Line_Separator00"
+            android:layout_below="@+id/Delivery_Charges"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/GrandTot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/Line_Separator00"
+            style="@style/Light_Grey_Color_Serif"
+            android:text="Total Amount" />
+
+        <TextView
+            android:id="@+id/GrandTot_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            style="@style/Light_Grey_Color_Serif"
+            android:layout_alignBaseline="@+id/GrandTot"/>
+
+
+        <View style="@style/Divider"
+            android:id="@+id/Line_Separator0"
+            android:layout_below="@+id/GrandTot"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/timeslot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"
+            style="@style/Light_Grey_Color_Serif"
+            android:text="Delivery"
+            android:textStyle="bold"
+            android:layout_below="@+id/Line_Separator0"
+            android:layout_centerHorizontal="true" />
+        <Spinner
+            android:id="@+id/SpinnerTimeSlot"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/timeslot"
+            android:layout_centerHorizontal="true">
+        </Spinner>
+
+
+
+
+        <TextView
+            android:id="@+id/cod_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"
+            android:layout_marginTop="5dp"
+            style="@style/Light_Grey_Color_Serif"
+            android:text="Payment Mode - COD"
+            android:layout_below="@+id/SpinnerTimeSlot"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dip"/>
+
+        <View style="@style/Divider"
+            android:id="@+id/Line_Separator1"
+            android:layout_below="@+id/cod_text"
+            android:layout_marginBottom="10dip"/>
+
+        <TextView
+            android:id="@+id/TOS_Acceptance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"
+            android:layout_below="@+id/Line_Separator1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dip"
+            android:gravity="center"
+            style="@style/Light_Grey_Color_Serif"
+            android:text="By using this application, you agree to the Terms of Service. Contact - cs@exfresh.online" />
+
+
+
+
+
+        <Button
+            android:id="@+id/BuyButton"
+            android:text="Buy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_button"
+            style="@style/button_text"
+            android:layout_alignParentBottom="true">
+        </Button>
+
+<!--
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PayU CheckOut"
+            android:id="@+id/payu"
+            android:layout_below="@+id/TOS_Acceptance" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy"
+            android:id="@+id/Payubutton"
+            android:layout_alignTop="@+id/payu"
+            android:layout_alignParentRight="true"/> -->
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+    <!--
+    <TextView
+        android:id="@+id/delivery_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dip"
+        style="@style/Light_Grey_Color_Serif"
+        android:textStyle="bold"
+        android:layout_marginBottom="3dp"
+        android:layout_centerHorizontal="true" /> -->
+    <!--
+            <TextView
+                android:id="@+id/accept_tos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dip"
+                style="@style/Light_Grey_Color_Serif"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:text="Please accept the Terms of Service"
+                android:layout_below="@+id/cbox"
+                android:layout_marginLeft="5dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />  -->
+    <!--
+    <TextView
+        android:id="@+id/selected_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dip"
+        style="@style/Light_Grey_Color_Serif"
+        android:textStyle="bold"/> -->
+    <!--
+            <TextView
+                android:id="@+id/read_tos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dip"
+                android:textStyle="bold"
+                android:text="[ Read Terms of Service ]"
+                android:clickable="true"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="2dp"
+                android:autoLink="web"
+                android:textColor="@drawable/text_link_selector"
+                android:background="@drawable/text_link_selector_bg"
+                />
+            -->
+    <!--
+    <TextView
+        android:id="@+id/tos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dip"
+        style="@style/Light_Grey_Color_Serif"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dip"
+        android:text="Terms of service "/>  -->
+
+    <!--
+    <TextView
+        android:id="@+id/read_tos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dip"
+        android:text="(View)"
+        android:clickable="true"
+        android:layout_alignBaseline="@+id/tos"
+        android:layout_toRightOf="@+id/tos"
+        android:autoLink="web"
+        android:textColor="@drawable/text_link_selector"
+        android:background="@drawable/text_link_selector_bg"/>  -->
+
+    <!--
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree to the terms of service and will adhere to them unconditionally."
+                android:id="@+id/cbox"
+                style="@style/Light_Grey_Color_Serif"
+                android:layout_below="@id/tos"
+                android:clickable="false" />  -->
+
+
+    <!--
+        <LinearLayout android:id="@+id/footerlayout"
+            android:layout_marginTop="3dip"
+            android:layout_marginBottom="-8dip"
+            android:layout_height="60dip"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+            <Button
+                android:id="@+id/bHome"
+                android:text="Home"
+                android:layout_weight="1"
+                android:background="@drawable/red_button"
+                style="@style/button_text">
+            </Button>
+            <Button
+                android:id="@+id/bMyAddress"
+                android:text="Address"
+                android:layout_weight="1"
+                android:background="@drawable/red_button"
+                style="@style/button_text"
+                >
+            </Button>
+            <Button
+                android:id="@+id/bMyAccount"
+                android:text="My Account"
+                android:layout_weight="1"
+                android:background="@drawable/red_button"
+                style="@style/button_text"
+                >
+            </Button>
+        </LinearLayout>  -->

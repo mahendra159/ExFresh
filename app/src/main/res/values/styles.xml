@@ -1,0 +1,161 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+    <!--<style name="AppBaseTheme" parent="android:Theme.Black"/>
+    <style name="AppTheme" parent="AppBaseTheme">-->
+        <!-- Customize your theme here. -->
+        <!-- Customize your theme here. -->
+        <!--
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        -->
+
+    </style>
+
+    <style name="button_text" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >#ffffff</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:textSize" >15dp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >#000000</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="button_text2" >
+        <item name="android:layout_width" >wrap_content</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >#ffffff</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:textSize" >15dp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >#000000</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="button_text3" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >#ffffff</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:textSize" >20dp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >#000000</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="button_text4" >
+        <item name="android:layout_width" >wrap_content</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >#ffffff</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:textSize" >15dp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >#000000</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="button_text5" >
+        <item name="android:textColor" >#ffffff</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:textSize" >17dp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >#000000</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="plain_text" >
+        <item name="android:layout_width" >wrap_content</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >#ff000000</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:textSize" >15dp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >#fff2fff8</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+
+    <style name="ThemeWithCorners" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_shape</item>
+    </style>
+
+    <style name="ThemeWithCorners2" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/popup_bg</item>
+    </style>
+
+    <style name="ThemeWithCorners3" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_shape2</item>
+    </style>
+
+
+    <color name="light_grey">#ffb3c0b9</color>
+
+    <style name="Light_Grey_Color" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#ff66726b</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="Light_Grey_Color_Serif" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#ff66726b</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="PartialDivider">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+
+    <style name="WalkthroughTheme" parent="Theme.AppCompat">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+
+
+    <!-- for new google login activity-->
+    <!-- Activity with no Title -->
+    <!--
+    <style name="ThemeOverlay.MyNoTitleActivity" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    -->
+
+    <!-- Dark Buttons -->
+    <!--
+    <style name="ThemeOverlay.MyDarkButton" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorButtonNormal">@color/blue_grey_500</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    -->
+
+</resources>

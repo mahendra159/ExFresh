@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#fff">
+
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_gradient2"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip">
+            <!-- Logo Start-->
+            <ImageView android:src="@drawable/splash_logo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"/>
+            <!-- Logo Ends -->
+        </LinearLayout>
+        <!--  Header Ends -->
+        <!-- Footer Start -->
+        <!--<LinearLayout android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="90dip"
+            android:background="@drawable/footer_repeat"
+            android:layout_alignParentBottom="true">
+        </LinearLayout>-->
+        <!-- Footer Ends -->
+
+        <!-- Registration Form -->
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+            <!-- First Name Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="First Name"/>
+            <EditText android:id="@+id/update_firstname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:ellipsize="start"
+                android:inputType="textPersonName"
+                android:background="@drawable/edittextstyle"/>
+
+            <!-- Last Name Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Last Name"/>
+            <EditText android:id="@+id/update_lastname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:layout_marginBottom="20dip"
+                android:ellipsize="start"
+                android:inputType="textPersonName"
+                android:background="@drawable/edittextstyle"/>
+
+            <!--  Email Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Email"/>
+            <EditText android:id="@+id/update_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:ellipsize="start"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittextstyle"/>
+
+            <!--  DOB Label -->   <!--style="@android:style/Widget.DeviceDefault.Light.Spinner" -->
+            <TextView android:id="@+id/dob"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Date Of Birth"/>
+            
+            <EditText
+                android:id="@+id/update_dob"
+                style="@android:style/Widget.DeviceDefault.Light.Spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="start"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:background="@drawable/edittextstyle"/>
+
+
+            <!-- Current Password Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="*Current Password"/>
+            <EditText android:id="@+id/cur_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:ellipsize="start"
+                android:hint="@string/change_password_hint"
+                android:background="@drawable/edittextstyle"/>
+
+
+
+
+            <!-- Change Password Label -->
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="*Confirm Password"/>
+            <EditText android:id="@+id/chg_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:ellipsize="start"
+                android:hint="@string/change_password_cnfrm_hint"
+                android:background="@drawable/edittextstyle"/>
+
+<!--
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#372c24"
+                android:text="Retype New Password"/>
+            <EditText android:id="@+id/chg_password_retype"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:singleLine="true"
+                android:layout_marginTop="5dip"
+                android:ellipsize="start"
+                android:background="@drawable/edittextstyle"/>
+            -->
+
+
+
+
+
+            <!--            style="?android:attr/spinnerStyle" -->
+
+
+
+            <!-- Update Button -->
+            <!--
+            <Button android:id="@+id/btnUpdate"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:ellipsize="start"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edittextstyle"
+                android:text="Update" /> -->
+
+            <!-- Update Button -->
+            <Button android:id="@+id/btnUpdate"
+                android:layout_marginTop="10dip"
+                android:ellipsize="start"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/red_button"
+                style="@style/button_text2"
+                android:text="Update" />
+
+
+
+        </LinearLayout>
+        <!-- Update Form Ends -->
+    </RelativeLayout>
+</ScrollView>

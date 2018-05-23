@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@+id/submit_layout"
+    android:scrollbars="vertical"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        >
+
+        <!--  Header  Starts-->
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_gradient2"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip">
+            <!-- Logo Start-->
+            <ImageView android:src="@drawable/splash_logo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"/>
+            <!-- Logo Ends -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+
+            <!--Put form controls here-->
+
+            <TextView
+                android:id="@+id/Address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                style="@style/Light_Grey_Color"
+                android:typeface="serif"
+                android:textSize="10pt">
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditAddress"
+                android:layout_height="wrap_content"
+                android:hint="Enter your complete address"
+                android:inputType="textPostalAddress"
+                android:layout_width="fill_parent"
+                style="@style/Light_Grey_Color"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:maxLines="6"
+                android:scrollbars="vertical">
+            </EditText>
+
+
+
+            <TextView
+                android:id="@+id/MobilePhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                style="@style/Light_Grey_Color"
+                android:typeface="serif"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditMobilePhone"
+                android:layout_height="wrap_content"
+                android:hint="Do not add (+91) or (0)"
+                android:inputType="number"
+                android:maxLength="10"
+                style="@style/Light_Grey_Color"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip">
+            </EditText>
+
+            <TextView
+                android:id="@+id/HomePhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobile 2 (optional)"
+                android:typeface="serif"
+                style="@style/Light_Grey_Color"
+                android:textSize="20dp">
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditHomePhone"
+                android:layout_height="wrap_content"
+                android:hint="Do not add (+91) or (0)"
+                android:inputType="number"
+                android:maxLength="10"
+                style="@style/Light_Grey_Color"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip">
+            </EditText>
+
+
+
+            <TextView
+                android:id="@+id/AliasAdd"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Please assign an address title for future reference. *"
+                android:textSize="20dp"
+                style="@style/Light_Grey_Color"
+                android:typeface="serif">
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditAliasAdd"
+                android:layout_height="wrap_content"
+                android:hint="Provide alias to this address"
+                android:typeface="serif"
+                style="@style/Light_Grey_Color"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dip">
+            </EditText>
+
+            <TextView
+                android:id="@+id/City"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:typeface="serif"
+                style="@style/Light_Grey_Color"
+                android:textSize="20dp">
+            </TextView>
+
+            <Spinner
+                android:id="@+id/SpinnerCity"
+                android:layout_height="wrap_content"
+                android:prompt="@string/cityspinner_title"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip">
+            </Spinner>
+
+            <Button
+                android:id="@+id/ButtonAddSubmit"
+                android:text="Submit"
+                android:background="@drawable/red_button"
+                style="@style/button_text">
+            </Button>
+
+
+
+            <!--
+<TextView
+    android:id="@+id/Add_First_Name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="First Name"
+    android:textSize="10pt">
+</TextView>
+
+<EditText
+    android:id="@+id/EditFirstName"
+    android:layout_height="wrap_content"
+    android:hint="Enter your first name"
+    android:inputType="textPersonName"
+    android:layout_width="fill_parent"
+    android:layout_marginTop="5dip"
+    android:layout_marginBottom="20dip">
+</EditText> -->
+            <!--
+                        <TextView
+                            android:id="@+id/Add_Last_Name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Last Name"
+                            android:textSize="10pt">
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/EditLastName"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter your last name"
+                            android:inputType="textPersonName"
+                            android:layout_width="fill_parent"
+                            android:layout_marginTop="5dip"
+                            android:layout_marginBottom="20dip">
+                        </EditText>
+                        -->
+
+            <!--
+            <TextView
+                android:id="@+id/Address2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address(Line 2)"
+                android:textSize="10pt">
+            </TextView>
+
+            <EditText
+                android:id="@+id/EditAddress2"
+                android:layout_height="wrap_content"
+                android:hint="Enter your address"
+                android:inputType="textPostalAddress"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip">
+            </EditText>
+            -->
+            <!--
+                        <TextView
+                            android:id="@+id/Zip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Zip/Postal Code"
+                            android:textSize="10pt">
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/EditZipPostal"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter your zip or postal code"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:layout_width="fill_parent"
+                            android:layout_marginTop="5dip"
+                            android:layout_marginBottom="20dip">
+                        </EditText>
+
+                        -->
+
+
+
+            <!--
+            <TextView
+                android:id="@+id/City"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="10pt">
+            </TextView>
+
+            <Spinner
+                android:id="@+id/SpinnerCity"
+                android:layout_height="wrap_content"
+                android:prompt="@string/cityspinner_title"
+                android:layout_width="fill_parent">
+            </Spinner>
+            -->
+            <!--
+                    <TextView
+                        android:id="@+id/State"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State"
+                        android:textSize="10pt">
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/SpinnerState"
+                        android:layout_height="wrap_content"
+                        android:prompt="@string/statespinner_title"
+                        android:layout_width="fill_parent">
+                    </Spinner>
+
+                    <TextView
+                        android:id="@+id/Country"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Country"
+                        android:textSize="10pt">
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/SpinnerCountry"
+                        android:layout_height="wrap_content"
+                        android:prompt="@string/countryspinner_title"
+                        android:layout_width="fill_parent">
+                    </Spinner>
+
+            -->
+
+            <!--
+             <TextView
+                 android:id="@+id/AdditionalInformation"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Additional Information"
+                 android:textSize="10pt">
+             </TextView>
+
+             <EditText
+                 android:id="@+id/EditAdditionalInformation"
+                 android:layout_height="wrap_content"
+                 android:hint="Enter any other additional information you would like to share with us"
+                 android:inputType="textMultiLine"
+                 android:lines="5"
+                 android:layout_width="fill_parent"
+                 android:layout_marginTop="5dip"
+                 android:layout_marginBottom="20dip">
+             </EditText>   -->
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+

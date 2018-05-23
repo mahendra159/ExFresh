@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout android:id="@+id/top_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="5dip"
+        android:background="@drawable/red_button"
+        style="@style/button_text">
+
+
+         <TextView android:id="@+id/selected_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            style="@style/button_text3"/>
+
+        <ImageView
+            android:id="@+id/change_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/change"
+            android:layout_marginLeft="1dp"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/selected_location"
+            android:layout_toRightOf="@+id/selected_location"
+            android:layout_toEndOf="@+id/selected_location"/>
+
+        <TextView android:id="@+id/hello_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            style="@style/button_text3"/>
+
+        <!--
+    <TextView android:id="@+id/change_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:layout_marginLeft="5dip"
+        android:text="Change"
+        android:textSize="18dip"
+        android:layout_alignBaseline="@+id/selected_location"
+        android:layout_toRightOf="@+id/selected_location"
+        android:layout_toEndOf="@+id/selected_location" /> -->
+
+
+
+        <!--
+            <TextView android:id="@+id/disp_fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff000000"
+                android:layout_alignParentRight="true"
+                android:textSize="25dip"
+                android:textStyle="bold"/>   -->
+    </RelativeLayout>
+
+
+    <LinearLayout android:id="@+id/centre_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+        android:layout_below="@+id/top_header"
+        android:orientation="vertical"
+        android:paddingBottom="5dip">
+
+        <!--android:background="@drawable/header_gradient2"-->
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/exfreshlogo"
+            android:layout_marginTop="72dp"
+            android:layout_centerHorizontal="true"/>
+
+   <!--
+        <TextView
+            android:id="@+id/feature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="No more adulteration, no more worries \n\nBuy fully certified and lab tested products\n\nView product source maps and lab test reports\n\nClick on 'certified button' to view certification \n\nDirect farm to door delivery in minimum time"
+            android:textSize="15dp"
+            android:typeface="serif"
+            android:background="@drawable/textview_round_corner"
+            android:textColor="#ffa67aec"
+            android:layout_centerHorizontal="true" />
+-->
+
+
+
+    </LinearLayout>
+
+
+    <TextView android:id="@+id/lblMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:layout_marginTop="15dip"
+        android:layout_marginLeft="3dip"
+        android:layout_below="@+id/centre_header"
+        android:textSize="18dip"/>
+
+
+
+
+
+
+
+
+
+
+
+<!--
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@drawable/ic_action_shopnow"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" /> -->
+
+<!--
+    <Button
+        android:id="@+id/shopnowbtn"
+        android:text="Shop Now"
+        android:layout_height="40dip"
+        android:layout_width="150dip"
+        android:layout_weight="1"
+        android:background="@drawable/red_button3"
+        style="@style/button_text2"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp">
+    </Button>
+    -->
+
+    <LinearLayout
+        android:id="@+id/progressBarLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progressbar3"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+
+<!--
+
+        android:background="@drawable/progress_bg"
+        -->
